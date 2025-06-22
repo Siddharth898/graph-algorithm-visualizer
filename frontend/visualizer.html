@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Graph Visualizer Full Stack</h1>
+    <div class="controls">
+        <label for="algorithm">Algorithm:</label>
+        <select id="algorithm">
+            <option value="bfs">BFS</option>
+            <option value="dfs">DFS</option>
+            <option value="astar">A*</option>
+        </select>
+        <button onclick="startAlgorithm()">Start</button>
+        <button onclick="resetGrid()">Reset</button>
+        <button onclick="saveGrid()">Save Grid</button>
+        <button onclick="fetchGrids()">Load Saved Grids</button>
+    </div>
+    <div id="grid" class="grid"></div>
+    <div id="savedGrids"></div>
+
+    <script src="js/algorithms.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

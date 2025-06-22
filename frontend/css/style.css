@@ -1,0 +1,49 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+.cell.obstacle { background-color: #333; }
+.cell.visited { background-color: #6fa8dc; }
+.cell.path { background-color: #93c47d; }
+
+.controls {
+    margin: 20px;
+}
